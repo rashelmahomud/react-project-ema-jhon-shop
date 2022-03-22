@@ -9,7 +9,7 @@ function App() {
     <div>
      <Header></Header>
      <Shop></Shop>
-     <h1>Rashel Mahomud RAj</h1>
+    
     
     </div>
   );
