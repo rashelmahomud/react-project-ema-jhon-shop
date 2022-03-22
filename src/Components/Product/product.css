@@ -1,0 +1,36 @@
+.product img{
+    width: 100%;
+    border-radius: 15px;
+
+   
+}
+.product {
+    margin: 20px;
+    border: 2px solid rgb(189, 183, 183);
+    border-radius: 10px;
+   position: relative;
+}
+.product-box{
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+.product-name{
+    font-size: 20px;
+    
+}
+
+.product-btn{
+    border: none;
+    width: 100%;
+    padding: 20px;
+    background-color: #FFE0B3;
+    font-size: 20px;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
