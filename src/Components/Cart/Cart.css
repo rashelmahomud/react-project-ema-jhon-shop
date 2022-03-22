@@ -1,4 +1,28 @@
 .cart-site{
     position: sticky;
     top: 0;
+    padding: 30px 20px;
+}
+
+.clear-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: navajowhite;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #FF3030;
+    color: white;
+}
+.review-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: navajowhite;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #FF9900;
+    color: white;
+    
+
 }
