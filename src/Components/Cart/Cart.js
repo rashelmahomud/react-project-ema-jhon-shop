@@ -11,16 +11,17 @@ const Cart = (props) => {
     for(const product of cart){
         total = total + product.price;
         shipping = shipping + product.shipping;
-
-    }
+    };
+    const tax = total* 10/100;
+    const final = total + shipping + tax;
     return (
         <div className='cart-site'>
                 <h4>Order Summery Here</h4>
                 <p>Select items: {cart.length}</p>
                 <p>Total Price: ${total}</p>
                 <p>Total Shipping Charge: ${shipping}</p>
-                <p>Tax: $</p>
-                <h4>Grand Total: $</h4>
+                <p>Tax: ${tax}</p>
+                <h4>Grand Total: ${final.toFixed(2)}</h4>
                 <button className='clear-btn'>Clear Cart</button>
                 
                 <button className='review-btn'>Review Order</button>
