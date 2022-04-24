@@ -4,15 +4,11 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
 
-
 const Shop = () => {
     const [products, setProducts] = useState([]);
-
-
     // add cart code here
     const [cart, setCart] = useState([]);
     useEffect( () => {
-
 
         fetch('products.json')
         .then(res => res.json())
@@ -21,7 +17,7 @@ const Shop = () => {
 
     // button cart handerler here code
     const cartHundeler = (product) => {
-        console.log(product);  
+        // console.log(product);  
         const newCart = [...cart,product];
         setCart(newCart);
         addToDb(product.id)
@@ -34,11 +30,9 @@ const Shop = () => {
                     products.map(product => <Product 
                         key={product.id}
                          product={product}
-                         cartHundeler = {cartHundeler}   // button haderlery some code
-                         
+                         cartHundeler = {cartHundeler}   // button haderlery some code    
                          ></Product>)
-                }
-                
+                } 
             </div>
             <div className="order-summmery">
                 <Cart cart={cart}></Cart>
@@ -47,5 +41,4 @@ const Shop = () => {
         </div>
     );
 };
-
 export default Shop;
